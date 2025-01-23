@@ -1,0 +1,35 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Victoria's First Communion" class="bg-pink-100 text-pink-900" flat="true" />
+    <GridLayout rows="*">
+        <!-- Background Image with proper sizing -->
+        <Image src="~/App_Resources/LTdesign.png" stretch="aspectFill" />
+        
+        <!-- Content ScrollView -->
+        <ScrollView>
+            <StackLayout class="p-6">
+                <!-- Semi-transparent background for better text readability -->
+                <StackLayout class="bg-opacity-0 rounded-lg p-4 m-2">
+                    <!-- Main Invitation Text -->
+                    <Label text=" " class="text-lg text-center text-pink-800 mb-2" />
+                    <Label text=" " class="text-2xl font-bold text-center text-pink-900 mb-4" />
+                    <Label text=" " class="text-lg text-center text-gray-700 mb-4" />
+                    <Label text=" " class="text-lg text-center text-gray-700" />
+                    <Label text=" " class="text-lg text-center text-gray-700" />
+                    <Label text=" " class="text-lg text-center text-gray-700" /> 
+                    <Label text=" " class="text-lg text-center text-gray-700" /> 
+                    <Label text=" " class="text-lg text-center text-gray-700" /> 
+                    <Label text=" " class="text-base text-center text-gray-700 mb-4" />
+                    <Label text=" " class="text-base text-center text-gray-700" />
+                    <Label text=" " class="text-base text-center text-gray-600 mb-8" />
+                </StackLayout>
+                
+                <!-- Action Buttons with improved styling -->
+                <Button text="💬 RSVP via WhatsApp" tap="{{ onRSVP }}" class="bg-pink-500 text-white p-4 rounded-lg m-1" />
+                <Button text="☎️ RSVP via Viber" tap="{{ onViber }}" class="bg-pink-500 text-white p-4 rounded-lg m-1" />
+                <Button text="🗺️ Ceremony Location" tap="{{ onCeremonyLocation }}" class="bg-pink-500 text-white p-4 rounded-lg m-1" />
+                <Button text="🏠 Reception Location" tap="{{ onReceptionLocation }}" class="bg-pink-500 text-white p-4 rounded-lg m-1" />
+                <Button text="📸 Share Photos via Google Drive" tap="{{ onSharePhotos }}" class="bg-pink-500 text-white p-4 rounded-lg m-1" />
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+</Page>

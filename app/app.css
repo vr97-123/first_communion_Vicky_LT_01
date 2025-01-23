@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Page {
+    background-color: white;
+}
+
+.btn-primary {
+    background-color: #ec4899;
+    color: white;
+    font-size: 16;
+    font-weight: bold;
+    border-radius: 8;
+}
+
+Label {
+    color: #374151;
+}
+
+.text-2xl {
+    font-size: 24;
+}
+
+.text-lg {
+    font-size: 18;
+}
+
+.text-base {
+    font-size: 16;
+}
+
+.bg-opacity-75 {
+    opacity: 0.75;
+}
